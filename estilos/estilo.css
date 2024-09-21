@@ -1,0 +1,91 @@
+:root {
+  --fondo: #080808;
+  --gris: #1b1b1b;
+  --color-letras: #9c9c9c;
+  --color-boton: #3f8e00;
+  --fuente: "IBM Plex Mono", monospace;
+  --titulos: "Ralway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--fondo);
+}
+
+header {
+  background-color: var(--gris);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: var(--gris);
+  padding: 10px;
+  width: 100%;
+}
+
+nav a {
+  color: var(--color-letras);
+  text-decoration: none;
+  padding: 10px;
+  font-family: var(--fuente);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  color: var(--color-letras);
+  padding: 10px;
+  flex: 1;
+  overflow: auto;
+}
+
+footer {
+  background-color: var(--gris);
+  color: var(--color-letras);
+  padding: 10px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-family: var(--fuente);
+  color: var(--color-letras);
+}
+
+footer img {
+  width: 95px;
+  height: 82px;
+}

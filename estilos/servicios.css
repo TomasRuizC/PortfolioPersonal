@@ -1,0 +1,44 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  flex: 1;
+  overflow: auto;
+}
+
+h2 {
+  color: white;
+  font-family: var(--titulos);
+  font-size: 34px;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+article {
+  background-color: white;
+  color: black;
+  width: 330px;
+  height: 300px;
+  margin-right: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5%;
+}
+
+article p {
+  font-family: var(--fuente);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
