@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,36 +23,60 @@
           <li><a href="contacto.html">Contacto</a></li>
           <li><a href="certificados.html">Certificados</a></li>
           <li>
-            <a href="https://www.linkedin.com/in/tomas-ruiz-conforti-5970a4227/" target="_blank"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-            <li><a href="https://www.instagram.com/tomyruizc/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <a
+              href="https://www.linkedin.com/in/tomas-ruiz-conforti-5970a4227/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
           </li>
-          <li></li>
+          <li>
+            <a href="https://www.instagram.com/tomyruizc/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
         </ul>
       </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </header>
     <div class="container">
-    <main>
-      <h2>Tomás Ruiz Conforti</h2>
-      <article>
-        <p>Técnico en TIC y Estudiando Tecnicatura en Desarrollo de Software</p>
-      </article>
-      <a href="cv/Curriculum Tomas Ruiz Conforti.pdf" download="Curriculum_Tomas_Ruiz_Conforti.pdf"><button><p>Currículum</p></button></a>
-    </main>
-    <aside><img src="images/Foto_Tomas.jpg" alt=""></aside>
-  </div>
+      <main>
+        <h2>Tomás Ruiz Conforti</h2>
+        <article>
+          <p>
+            Técnico en TIC y Estudiando Tecnicatura en Desarrollo de Software
+          </p>
+        </article>
+        <a
+          href="cv/Curriculum Tomas Ruiz Conforti.pdf"
+          download="Curriculum_Tomas_Ruiz_Conforti.pdf"
+        >
+          <button><p>Currículum</p></button>
+        </a>
+      </main>
+      <aside><img src="images/Foto_Tomas.jpg" alt="" /></aside>
+    </div>
     <footer>
       <ul>
         <li><p>Tomás Ruiz Conforti</p></li>
         <li>
           <p>
-            Sitio desarrollado con práctica para la materia materia Diseño y
-            Desarrollo Web
+            Sitio desarrollado con práctica para la materia Diseño y Desarrollo
+            Web
           </p>
         </li>
         <li><img src="images/images-Photoroom.png" alt="Foto UADE" /></li>
       </ul>
     </footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("header nav ul");
+        nav.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
