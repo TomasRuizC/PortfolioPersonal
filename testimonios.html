@@ -31,6 +31,11 @@
           <li></li>
         </ul>
       </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </header>
     <main>  
         <h2>Testimonios</h2> 
@@ -71,5 +76,11 @@
         <li><img src="images/images-Photoroom.png" alt="Foto UADE" /></li>
       </ul>
     </footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("header nav ul");
+        nav.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
